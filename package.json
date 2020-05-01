@@ -4,7 +4,59 @@
   "description": "another schematic collection with different style-set of official nestjs/nest",
   "main": "dist/index.js",
   "repository": "git@github.com:nest-x/nestx-schematics.git",
-  "author": "aquariuslt <superaquariuslt@gmail.com>",
+  "author": "Aquariuslt <superaquariuslt@gmail.com>",
   "license": "MIT",
-  "private": false
+  "keywords": [
+    "nestjs",
+    "nestjs-schematics",
+    "nestjs-template"
+  ],
+  "files": [
+    "dist",
+    "index.ts"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "release": "semantic-release"
+  },
+  "schematics": "./dist/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^9.1.4",
+    "@angular-devkit/schematics": "^9.1.4",
+    "@nestjs/schematics": "^7.0.0",
+    "fs-extra": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.4",
+    "jest": "^25.5.3",
+    "rimraf": "^3.0.2",
+    "rxjs": "^6.5.5",
+    "ts-jest": "^25.4.0",
+    "ts-node": "^8.9.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ],
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "<rootDir>/src/*.ts",
+      "!<rootDir>/src/__tests__/**/*.ts"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/*.test.ts"
+    ],
+    "testEnvironment": "node",
+    "coverageDirectory": "<rootDir>/reports/coverage"
+  }
 }
