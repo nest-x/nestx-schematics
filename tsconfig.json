@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
     "declaration": true,
     "removeComments": true,
     "noLib": false,
@@ -8,12 +7,13 @@
     "resolveJsonModule": true,
     "experimentalDecorators": true,
     "noImplicitAny": false,
-    "target": "es6",
     "sourceMap": false,
+    "skipLibCheck": true,
+    "module": "commonjs",
+    "target": "es6",
     "outDir": "./dist",
-    "rootDir": "./src",
-    "skipLibCheck": true
+    "rootDir": "./src"
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "src/**/*.test.ts"]
+  "exclude": ["node_modules", "dist"]
 }

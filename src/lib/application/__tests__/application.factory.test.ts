@@ -18,6 +18,7 @@ describe('Application Factory', () => {
       '/project/README.md',
       '/project/nest-cli.json',
       '/project/package.json',
+      '/project/tsconfig.build.json',
       '/project/tsconfig.json',
       '/project/src/app.module.ts',
       '/project/src/main.ts',
