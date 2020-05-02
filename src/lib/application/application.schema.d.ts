@@ -26,7 +26,7 @@ export interface ApplicationOptions {
   /**
    * The used package manager. (prefer yarn)
    */
-  packageManager?:  'yarn' | 'npm'| 'undefined';
+  packageManager?: 'yarn' | 'npm' | 'undefined';
   /**
    * Nest included production dependencies (comma separated values).
    */
