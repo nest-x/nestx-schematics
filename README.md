@@ -1,4 +1,4 @@
-# `nestx-schematics`
+# nestx-schematics
 
 Nest architecture element generation based on Nest-X schematics. (TypeScript Support Only)
 
