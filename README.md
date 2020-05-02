@@ -6,14 +6,44 @@ Nest architecture element generation based on Nest-X schematics. (TypeScript Sup
 
 ## Description
 
+It will override
+
 ## Concerns
 
 ### Code Styles
 
-### Testing framework
+- bundled with `prettier + eslint + eslint-typescript` support
+- bundled with `husky` and `pretty-quick` in git hooks
+- using config written in `package.json` instead of single configuration file
+- using `__tests__` an `jest` style test file suffix
+
+## Features
+
+> PR Welcome
+
+- [x] Application
+- [ ] Class
+- [ ] Configuration
+- [ ] Controller
+- [ ] Decorator
+- [ ] Interceptor
+- [ ] Library
+- [ ] Service
 
 ## Usage
 
-### Create Nest Application with `@nest/cli`
+### Create Nest Application with `@nestjs/cli`
 
-### Create New Nest Component on exist Nest Application
+> Pre-require suite: Ensure you installed `@nestjs/cli` globally first. If not, please run `npm i @nestjs/cli -g` or `yarn global add @nestjs/cli` first
+
+**Note**
+
+You must install the latest version `nestx-schematics` globally at your local then it can be found by `@nestjs/cli`.
+
+```bash
+nest g -c nestx-schematics application <your-app-name>
+```
+
+### Create New Nest Component on existing Nest Application
+
+> Currently, not support
