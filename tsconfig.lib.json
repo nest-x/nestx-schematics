@@ -8,12 +8,12 @@
     "resolveJsonModule": true,
     "experimentalDecorators": true,
     "noImplicitAny": false,
-    "target": "es6",
+    "skipLibCheck": true,
     "sourceMap": false,
+    "target": "es6",
     "outDir": "./dist",
-    "rootDir": "./src",
-    "skipLibCheck": true
+    "rootDir": "./src"
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "src/**/*.test.ts"]
+  "include": ["src/index.ts", "src/lib"],
+  "exclude": ["node_modules", "src/**/*/files/**", "src/**/*.test.ts"]
 }

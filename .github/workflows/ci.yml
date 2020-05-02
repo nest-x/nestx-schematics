@@ -20,3 +20,11 @@ jobs:
           yarn
           yarn test:cov
           yarn build
+      - name: Upload coverage to Codecov
+        if: matrix.node-version == '12.x'
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{secrets.CODECOV_TOKEN}}
+          file: ./coverage/lcov.info
+          flags: unittests
+          name: codecov-umbrella
