@@ -41,6 +41,7 @@ It will override
 You must install the latest version `nestx-schematics` globally at your local then it can be found by `@nestjs/cli`.
 
 ```bash
+yarn global add nestx-schematics
 nest g -c nestx-schematics application <your-app-name>
 ```
 
