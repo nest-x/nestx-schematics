@@ -1,5 +1,5 @@
 import { join, Path, strings } from '@angular-devkit/core';
-import { apply, mergeWith, move, Rule, Source, template, url } from '@angular-devkit/schematics';
+import { apply, contentTemplate, mergeWith, move, Rule, Source, url } from '@angular-devkit/schematics';
 import { basename, parse } from 'path';
 import { DEFAULT_AUTHOR, DEFAULT_DESCRIPTION, DEFAULT_LANGUAGE, DEFAULT_VERSION } from '../defaults';
 import { ApplicationOptions } from './application.schema';
@@ -23,9 +23,10 @@ function transform(options: ApplicationOptions): ApplicationOptions {
   target.version = !!target.version ? target.version : DEFAULT_VERSION;
 
   target.packageManager =
-    !target.packageManager || target.packageManager === 'undefined' ? 'npm' : target.packageManager;
+    !target.packageManager || target.packageManager === 'undefined' ? 'yarn' : target.packageManager;
   target.dependencies = !!target.dependencies ? target.dependencies : '';
   target.devDependencies = !!target.devDependencies ? target.devDependencies : '';
+
   return target;
 }
 
@@ -39,10 +40,15 @@ function resolvePackageName(path: string) {
 
 function generate(options: ApplicationOptions, path: string): Source {
   return apply(url(join('./files' as Path, options.language)), [
-    template({
+    /**
+     * different from `@nestjs/schematics`, we only use `contentTemplate` here
+     * without pathTemplate() which will confilct with default jest style `__tests__` folder
+     * replacement
+     * */
+    contentTemplate({
       ...strings,
-      ...options,
+      ...options
     }),
-    move(path),
+    move(path)
   ]);
 }
