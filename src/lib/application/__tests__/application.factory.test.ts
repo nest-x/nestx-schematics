@@ -14,7 +14,9 @@ describe('Application Factory', () => {
     const files = tree.files;
 
     expect(files).toEqual([
+      '/project/.eslintrc.json',
       '/project/.gitignore',
+      '/project/.prettierrc',
       '/project/README.md',
       '/project/nest-cli.json',
       '/project/package.json',

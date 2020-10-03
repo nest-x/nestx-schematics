@@ -1,8 +1,8 @@
 {
-  "semanticCommits": true,
+  "semanticCommits": "enabled",
   "packageRules": [
     {
-      "depTypeList": ["devDependencies"],
+      "depTypeList": ["dependencies", "devDependencies"],
       "automerge": true
     }
   ],
