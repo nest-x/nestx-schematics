@@ -1,6 +1,6 @@
 {
   "name": "nestx-schematics",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "another schematic collection with different style-set of official nestjs/nest",
   "main": "dist/index.js",
   "repository": "git@github.com:nest-x/nestx-schematics.git",
