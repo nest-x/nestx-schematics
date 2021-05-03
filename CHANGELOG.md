@@ -1,3 +1,10 @@
+## [1.0.29](https://github.com/nest-x/nestx-schematics/compare/v1.0.28...v1.0.29) (2021-05-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fs-extra to v10 ([a89bfce](https://github.com/nest-x/nestx-schematics/commit/a89bfce09ebbe31e6a82d3cfa3be8e3775b56bda))
+
 ## [1.0.28](https://github.com/nest-x/nestx-schematics/compare/v1.0.27...v1.0.28) (2021-03-22)
 
 
