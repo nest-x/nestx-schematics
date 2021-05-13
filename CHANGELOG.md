@@ -1,3 +1,10 @@
+## [1.0.30](https://github.com/nest-x/nestx-schematics/compare/v1.0.29...v1.0.30) (2021-05-13)
+
+
+### Bug Fixes
+
+* **deps:** update angularcli monorepo to v12 ([6e9bead](https://github.com/nest-x/nestx-schematics/commit/6e9bead8aaa7f9285eafb655c0c583e36c6c51aa))
+
 ## [1.0.29](https://github.com/nest-x/nestx-schematics/compare/v1.0.28...v1.0.29) (2021-05-03)
 
 
