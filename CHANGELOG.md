@@ -1,3 +1,10 @@
+## [1.0.38](https://github.com/nest-x/nestx-schematics/compare/v1.0.37...v1.0.38) (2021-08-05)
+
+
+### Bug Fixes
+
+* **deps:** update nest monorepo to v8.0.6 ([7834954](https://github.com/nest-x/nestx-schematics/commit/78349544bf2478f7cdee42bbb0cfd026f201d801))
+
 ## [1.0.37](https://github.com/nest-x/nestx-schematics/compare/v1.0.36...v1.0.37) (2021-07-16)
 
 
