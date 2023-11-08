@@ -27,8 +27,8 @@
   },
   "schematics": "./dist/collection.json",
   "dependencies": {
-    "@angular-devkit/core": "^12.0.0",
-    "@angular-devkit/schematics": "^12.0.0",
+    "@angular-devkit/core": "^17.0.0",
+    "@angular-devkit/schematics": "^17.0.0",
     "@nestjs/schematics": "^8.0.0",
     "fs-extra": "^10.0.0"
   },
